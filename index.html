@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portofolio Ardelia</title>
+    <link rel="icon" type="image/x-icon" href="img/ardel.jpg" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body id="page-top">
+    <nav class="nav-container">
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <div class="containerx">
+            <h1>Welcome To My Portfolio!</h1>
+            <img src="img/ardel.jpg" alt="yesi" class="bulat"/>
+            <h1>Ardelia Putri Dianti</h1>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <h4>Graphic Artist - Web Designer - Database - IoT</h4>
+        </div>
+    </header>
+
+    <!-- Section aboute me -->
+    <section id="about" class="about_me-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Nama saya Ardelia Putri Dianti, lahir di Kebumen pada tanggal 23 Januari 2004. Saya menyelesaikan pendidikan dasar di SDN Gunung Putri 05, pendidikan menengah pertama di SMP SMART Cibinong, dan pendidikan menengah kejuruan di SMK Pelita Nusantara. Saat ini, saya adalah mahasiswa Universitas Pamulang (Unpam), angkatan 2022, Fakultas Ilmu Komputer, program studi Teknik Informatika, dan sedang menempuh semester kelima pada tahun 2024.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <!-- Project 1 -->
+            <div class="project-item">
+                <img src="img/login.png" alt="Form Login">
+                <h3>Form Login</h3>
+                <p>"This login form project allows users to enter their username and password to access a system."</p>
+                <a href="form-login.HTML" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-item">
+                <img src="img/kalkulator.png" alt="Form Login">
+                <h3>Kalkulator</h3>
+                <p>"This calculator project allows users to perform basic arithmetic operations efficiently and accurately."</p>
+                <a href="kalkulator/kalku.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-item">
+                <img src="img/uts.png" alt="Form Login">
+                <h3>Dashboard Karyawan</h3>
+                <p>"This employee dashboard project enables users to manage and view employee data in a structured and user-friendly interface."</p>
+                <a href="db-karyawan/index.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-item">
+                <img src="img/tetris.png" alt="Form Login">
+                <h3>Tetris</h3>
+                <p>"This Tetris game project offers users a fun and interactive experience by stacking and clearing blocks in a classic puzzle game."</p>
+                <a href="tetris/INDEX.html" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-item">
+                <img src="img/chart.png" alt="Form Login">
+                <h3>Dashboard Penjualan</h3>
+                <p>"This sales dashboard project provides users with real-time insights and analytics to monitor and optimize sales performance."</p>
+                <a href="dashboard/zzcharttt.html" target="_blank">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="project-list">
+            <!-- Project 1 -->
+            <div class="project-item2">
+                <img src="sertif/html.jpeg" alt="Form Login">
+                <h3>Introduction HTML</h3>
+                <a href="https://www.sololearn.com/certificates/CC-D2GBQEDM" target="_blank">View Certificates</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-item2">
+                <img src="sertif/css.jpeg" alt="Form Login">
+                <h3>Introduction CSS</h3>
+                <a href="https://www.sololearn.com/en/certificates/CC-L10AYDUL" target="_blank">View Certificates</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-item2">
+                <img src="sertif/js.jpeg" alt="Form Login">
+                <h3>Introduction JavaScript</h3>
+                <a href="https://www.sololearn.com/certificates/CC-C8NZKRCB" target="_blank">View Certificates</a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-item2">
+                <img src="sertif/med-js.png" alt="Form Login">
+                <h3>Intermediate JavaScript</h3>
+                <a href="https://www.sololearn.com/certificates/CC-5HG8RMJN" target="_blank">View Certificates</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ardelia Putri Dianti. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+    <script>
+    function updateActiveNav() {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionBottom = sectionTop + section.offsetHeight;
+            const scrollPosition = window.scrollY;
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                const correspondingLink = document.querySelector(`.nav-links a[href="#${section.id}"]`);
+                
+                // Remove active class from all links
+                navLinks.forEach(link => link.classList.remove('active'));
+                
+                // Add active class to current section's link
+                if (correspondingLink) {
+                    correspondingLink.classList.add('active');
+                }
+            }
+        });
+    }
+    
+    // Update active state on scroll
+    window.addEventListener('scroll', updateActiveNav);
+    
+    // Update active state when clicking links
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+    
+    // Initial call to set active state on page load
+    updateActiveNav();
+    </script>
+</body>
+</html>

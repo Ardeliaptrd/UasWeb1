@@ -1,0 +1,303 @@
+ /* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #ffdcdc;
+}
+.mb-4 {
+    margin-bottom: 1rem !important;
+  }
+
+  .col-md-2 {
+    background-color: #dd7979;
+    border-radius: 20px;
+    flex: 0 0 auto;
+    width: 16%;
+  }
+
+/* Header */
+header {
+    background-color: #dd7979;
+    color: white;
+    padding-block-start: 40px;
+    text-align: center;
+}
+
+img {
+    width: 200px;   /* Ubah ukuran lebar gambar */
+    height: 200;   /* Menjaga aspek rasio */
+    border-radius: 50%;  /* Membuat sudut gambar melengkung hingga menjadi lingkaran */
+    margin-top: 30px;
+    margin-bottom:30px;
+    object-fit: cover;
+    border: 2px solid rgb(238, 239, 244); /* Tambahkan border pada gambar */
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+.nav-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    color: #e57373;
+    background-color: rgba(229, 115, 115, 0.1);
+}
+
+.nav-links a.active {
+    color: #fff;
+    background-color: #e57373;
+}
+section[id] {
+    scroll-margin-top: 3.7rem; /* Adjusts scroll position when clicking nav links */
+    padding-top: 2rem;      /* Adds space above each section */
+}
+
+/* Optional: Add smooth scrolling to the whole page */
+html {
+    scroll-behavior: smooth;
+}
+/* Section dasar */
+section {
+    padding: 80px 0;
+}
+
+.containerx {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Section about me */
+.about_me-section {
+    background-color: rgb(181, 40, 40);
+    text-align: center;
+}
+
+.about_me-section p {
+    font-size: 1.2em;
+}
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border-color: #ffffff;
+}
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+  }
+  .divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+  }
+/* Section Tentang Saya */
+.Biodata_diri-section {
+    background-color: #ff9e9e;
+    box-shadow: #ff0000;
+    text-align: left;
+}
+
+.Biodata_diri-section p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Meratakan card di tengah */
+    padding: 20px; /* Tambahkan jarak dari tepi */
+}
+
+.project-item {
+    background-color: #dd7979;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    padding: 15px; /* Jarak konten dari tepi card */
+    text-align: left;
+    width: 240px; /* Lebar konsisten untuk setiap card */
+}
+
+.project-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover; /* Proporsional gambar dalam card */
+    border-radius: 10px;
+}
+
+.project-item h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.project-item a {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1rem;
+    color: blue;
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query untuk Tampilan Responsif */
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%; /* Full width pada layar kecil */
+    }
+}
+
+.project-item2 {
+    background-color: #dd7979;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    padding: 15px; /* Jarak konten dari tepi card */
+    text-align: left;
+    width: 300px; /* Lebar konsisten untuk setiap card */
+}
+
+.project-item2 img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Proporsional gambar dalam card */
+    border-radius: 10px;
+}
+
+.project-item2 h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-item2 p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.project-item2 a {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 1rem;
+    color: blue;
+    text-decoration: none;
+}
+
+.project-item2 a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query untuk Tampilan Responsif */
+@media (max-width: 768px) {
+    .project-item2 {
+        width: 100%; /* Full width pada layar kecil */
+    }
+}
+
+.project-card {
+    background-color: #dd7979;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 250px; /* Flex item with minimum width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+
+/* Section pendidikan */
+.Pendidikan-section {
+    background-color: #b52828;
+    text-align: left;
+}
+
+.Pendidikan-section a {
+    color: #2a2b2c;
+    text-decoration: none;
+}
+
+.Pendidikan-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
